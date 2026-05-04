@@ -4,7 +4,7 @@ print("===")
 print("13 Steps Till Dawn")
 print("===")
 time.sleep(1)
-print("This story has 5 endings. I hope you enjoy it.")
+print("This story has 5 endings.")
 time.sleep(1)
 print("=")
 
@@ -28,7 +28,7 @@ loop = 0
 memory = None
 
 while True:
-    print("[ Step 1: Falling Asleep ]")
+    print("\n[ Step 1: Falling Asleep ]")
     print("===")
     time.sleep(1.5)
 
@@ -85,7 +85,7 @@ while True:
 
     loop += 1
     print("===")
-    print(f"[ Step 2: Observation ] (Cycle #{loop})")
+    print(f"\n[ Step 2: Observation ] (Cycle #{loop})")
     print("===")
     time.sleep(1.5)
 
@@ -138,7 +138,7 @@ while True:
     print("A loud crash came below the building. Something deep in your soul crumbled.")
     time.sleep(2)
 
-    print("[ Step 3: Recording ]")
+    print("\n[ Step 3: Recording ]")
     time.sleep(2)
     print("You saw him facing you with his back, seemingly trying to call someone, but no one answers.")
     time.sleep(2)
@@ -149,7 +149,7 @@ while True:
     print("You rushed forward, trying to grab him, but heard a familiar yet rigid voice:")
     time.sleep(1)
 
-    print("[ Step 4: Failure]")
+    print("\n[ Step 4: Failure]")
     print('"You should go as fast as you can to the nearest building and jump from the rooftop."')
     time.sleep(1.5)
 
@@ -225,7 +225,7 @@ while True:
         time.sleep(1.5)
 
     print("===")
-    print("[ Step 6: Dimensional Descent ]")
+    print("\n[ Step 6: Dimensional Descent ]")
     print("===")
     time.sleep(1.5)
     print("Your consciousness sinks into the dream due to hesitation.")
@@ -233,7 +233,7 @@ while True:
     print("Do not try to recall back.")
     time.sleep(2)
 
-    print("[ Step 7: Pursuit ]")
+    print("\n[ Step 7: Pursuit ]")
     time.sleep(1.5)
     print("Please recall the clearest scene from your memory and begin pursuing 'him.'")
     print("The clarity of your memory will determine how close you can get to him in this dream.")
@@ -302,15 +302,15 @@ while True:
     print("\nYou begin pursuing his figure...")
     time.sleep(1.5)
 
-    print("[ Step 8 ]")
+    print("\n[ Step 8 ]")
     print("It's all your fault.")
     time.sleep(0.3)
-    print("[ Step 8: Watch ]")
+    print("\n[Step 8: Watch]")
     time.sleep(1.5)
     print("Let me see your face one more time.")
     time.sleep(1.5)
 
-    print("[ Step 9: Diagnosis ]")
+    print("\n[ Step 9: Diagnosis ]")
     time.sleep(1.5)
     print("All the guilt points to you.")
     time.sleep(0.5)
@@ -327,7 +327,7 @@ while True:
     time.sleep(2)
 
     print("=")
-    print("[ Step 10: Awakening ]")
+    print("\n[ Step 10: Awakening ]")
     print("=")
     time.sleep(1.5)
 
@@ -402,7 +402,7 @@ while True:
     time.sleep(2)
 
     print("=")
-    print("[ Step 5: Reset ]")
+    print("\n[ Step 5: Reset ]")
     print("=")
     time.sleep(1.5)
     print("Yeah. ")
@@ -429,7 +429,7 @@ while True:
     print("Someone came by.")
     time.sleep(1)
 
-    print("[ Step 11 ]")
+    print("\n[ Step 11 ]")
     time.sleep(0.5)
     print('"Don\'t listen. Don\'t look. Don\'t remember this place."')
     time.sleep(1)
@@ -464,12 +464,13 @@ while True:
     time.sleep(1.5)
     print("The world started to fade.")
     time.sleep(1.5)
-    print('"...I Lov"')
     time.sleep(0.2)
     print("The dream evaporates before your eyes.")
-    time.sleep(1.5)
+    time.sleep(5)
+    print("I love you.")
+    time.sleep(2)
 
-    print("[ Step 12: Dream's End ]")
+    print("\n[ Step 12: Dream's End ]")
     time.sleep(1.5)
 
     print("You're woken by your alarm and birdsong. You find tears dried on your face.")
