@@ -467,8 +467,10 @@ while True:
     time.sleep(0.2)
     print("The dream evaporates before your eyes.")
     time.sleep(5)
-    print("I love you.")
-    time.sleep(2)
+    print("You heard his voice from the deepest of your soul.")
+    time.sleep(5)
+    print('"I love you."')
+    time.sleep(5)
 
     print("\n[ Step 12: Dream's End ]")
     time.sleep(1.5)
