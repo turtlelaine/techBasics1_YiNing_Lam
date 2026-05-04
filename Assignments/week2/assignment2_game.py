@@ -39,7 +39,7 @@ while True:
 
     phone_loop = True
     while phone_loop:
-        choice = input("Answer or not? (yes/no): ")
+        choice = input("Answer? (yes/no): ")
         if choice == "yes":
             repeat += 1
             print("You opened your phone but saw no missed calls.")
@@ -56,16 +56,14 @@ while True:
 
                 retry = input('Do you want to wake up and try again? (Enter "retry" to restart / Enter "end" to quit): ')
                 if retry == "retry":
-                    print("You closed your eyes, trying to fall asleep again...")
-                    time.sleep(1.5)
-                    print("The dream is reweaving...")
+                    print("You closed your eyes again...")
                     time.sleep(1.5)
                     repeat = 0
                     loop = 0
                     notebook = []
                     break
                 else:
-                    print("The notebook quietly closes, waiting to be opened again...")
+                    print("The notebook closes quietly , waiting to be opened again...")
                     exit()
             else:
                 print("You couldn't sleep until dawn, the birds called you up.")
@@ -73,7 +71,7 @@ while True:
                 print("You got out of bed for a drink and started another dazed day.")
                 time.sleep(1.5)
                 print("""After a tiring day, you got back home.
-                you were extremely tired so collapsed directly onto the bed.""")
+                you were extremely tired so you collapsed directly onto the bed.""")
                 time.sleep(1.5)
                 print("Just as you're about to fall asleep, another phone rings...")
         elif choice == "no":
@@ -92,55 +90,58 @@ while True:
     time.sleep(1.5)
 
     print("You entered a dream.")
-    time.sleep(1.5)
+    time.sleep(2)
     print("You looked around and found yourself on a rooftop.")
-    time.sleep(1)
-    print("A gentle breeze blown.")
-    time.sleep(1)
+    time.sleep(2)
+    print("\nA gentle breeze blown.")
+    time.sleep(2)
 
     print("\n You saw him standing at the edge of the rooftop with his back facing you.")
-    time.sleep(1)
+    time.sleep(2)
     print("\nYour heart was pounding. You wanted to:")
+    time.sleep(2)
     print("1. Slowly walk toward him")
+    time.sleep(1)
     print("2. Stand still and watch him")
+    time.sleep(1)
     print("3. Call his name")
+    time.sleep(1)
 
     sunset = input("Choose 1, 2, or 3: ")
 
     if sunset == "1":
-        print("\nYou quietly walked toward him, footsteps light, afraid to disturb him.")
+        print("\nYou walked toward him quietly, footsteps light, afraid to disturb him.")
         time.sleep(1)
         print("He didn't seem to notice you.")
-        notebook.append("I chose to walk toward him, but couldn't reach him.")
+        notebook.append("I chose to walk toward him, but could never reach.")
     elif sunset == "2":
         print("\nYou stood still, watching his back.")
         time.sleep(1)
         print("The wind lifted the corner of his clothes. You suddenly felt a deja-vu.")
         notebook.append("I stood still watching him, not getting closer.")
     else:
-        print("\nYou tried to call his name, but realize you've forgotten it.")
+        print("\nYou tried to call his name.")
         time.sleep(1)
         print("The name got stuck in your throat, unable to come out.")
-        notebook.append("I tried to call him, but forgot his name.")
+        notebook.append("I tried to call him, but something blocked my voice.")
 
     time.sleep(1.5)
 
     print("\nHe looked up at the sky. You followed his gaze and looked up as well.")
-    time.sleep(1)
+    time.sleep(2)
     print("The sunset was stunning. You felt a sense of peace.")
-    time.sleep(1.5)
+    time.sleep(2)
     print("You looked away.")
+    time.sleep(2)
     print("He was gone.")
-    time.sleep(1)
+    time.sleep(2)
     print("A loud crash came below the building. Something deep in your soul crumbled.")
-    time.sleep(1.5)
+    time.sleep(2)
 
     print("[ Step 3: Recording ]")
-    time.sleep(0.5)
-    print("You silently recorded this scene in your mind.")
-    time.sleep(1)
+    time.sleep(2)
     print("You saw him facing you with his back, seemingly trying to call someone, but no one answers.")
-    time.sleep(1.5)
+    time.sleep(2)
     dream_record = input("Please record this dream: ")
     notebook.append(dream_record)
     print("Recorded.")
@@ -149,9 +150,7 @@ while True:
     time.sleep(1)
 
     print("[ Step 4: Failure]")
-    print("=")
     print('"You should go as fast as you can to the nearest building and jump from the rooftop."')
-    print("=")
     time.sleep(1.5)
 
     if loop == 1:
@@ -171,9 +170,9 @@ while True:
         time.sleep(2)
         print("You fell again, heart palpitating, sobbing, restless. It feels familiar, but something is missing.")
     elif loop >= 3:
-        print("I'm coming for you.")
+        print("...")
         time.sleep(2)
-        print("..You feel an unprecedented calm...")
+        print("...You feel an unprecedented calm.")
 
     time.sleep(1.5)
 
@@ -191,7 +190,7 @@ while True:
 
         retry = input("Do you want to wake up and try again? (retry/end): ")
         if retry == "retry":
-            print("You close your eyes, trying to fall asleep again...")
+            print("You closed your eyes again.")
             time.sleep(1.5)
             print("The dream is reweaving...")
             time.sleep(1.5)
@@ -230,7 +229,8 @@ while True:
     print("===")
     time.sleep(1.5)
     print("Your consciousness sinks into the dream due to hesitation.")
-    print("Please do not try to recall the real world.")
+    time.sleep(2)
+    print("Do not try to recall back.")
     time.sleep(2)
 
     print("[ Step 7: Pursuit ]")
@@ -303,22 +303,22 @@ while True:
     time.sleep(1.5)
 
     print("[ Step 8 ]")
+    print("It's all your fault.")
     time.sleep(0.3)
-    print("Your fault.")
-    time.sleep(0.5)
-    print("[ Step 8: Watching ]")
+    print("[ Step 8: Watch ]")
     time.sleep(1.5)
     print("Let me see your face one more time.")
     time.sleep(1.5)
 
     print("[ Step 9: Diagnosis ]")
     time.sleep(1.5)
-    print("Remember. Remember your dream. All the guilt points to you.")
-    print("You are the one who should die. You are—")
-    time.sleep(1.5)
+    print("All the guilt points to you.")
+    time.sleep(0.5)
+    print("You are the one who should die. You are th")
+    time.sleep(0.3)
     print("[ Step 9: Judgment ]")
     time.sleep(1.5)
-    print("Please pay attention to the rationality of your judgment and the dream. Recall why you entered this dream.")
+    print("Recall why you entered this dream.")
     time.sleep(2)
 
     print("A stronger wave of dizziness hits you. You can't move. You feel like you're being held down by a ghost.")
@@ -352,6 +352,8 @@ while True:
     print("You feel happy being back in those warm, ordinary days.")
     print("You're really home.")
     time.sleep(3)
+    print("You woke up successfully.")
+    time.sleep(3)
 
     print("The end.")
     time.sleep(10)
@@ -360,7 +362,7 @@ while True:
 
     if daily != "no":
         print("You close the notebook and choose to continue this life.")
-        print("[Ordinary Ending: Unchanging Daily Life]")
+        print("[Normal Ending: Unchanging Daily Life]")
         print("=")
         print("Thank you for playing.")
         print("=")
@@ -418,6 +420,14 @@ while True:
 
     print("You hesitated.")
     time.sleep(1)
+    print("You heard all the voices at one millisecond.")
+    time.sleep(1)
+    print("All the sirens, crowd, lights came back to your mind.")
+    time.sleep(1)
+    print("'I shouldn/'t be...'")
+    time.sleep(1)
+    print("Someone came by.")
+    time.sleep(1)
 
     print("[ Step 11 ]")
     time.sleep(0.5)
@@ -427,8 +437,8 @@ while True:
     time.sleep(1)
     print('"I\'m here."')
     time.sleep(1.5)
-
     print("But you could still hear his voice clearly.")
+    time.sleep(2)
     print("After a strong fluctuation, you entered an void.")
     time.sleep(1.5)
     print("He stood before you, unharmed.")
@@ -440,11 +450,11 @@ while True:
     print('"Time is running out..."')
     time.sleep(1.5)
     print("You remember everything. An overwhelming sense of guilt chokes you with coldness.")
-    time.sleep(1.5)
+    time.sleep(2)
     print("'I\'m sorry, I\'m sorry I didn\'t answer your phone. I should have noticed earlier...'")
-    time.sleep(1.5)
-    print('"I should have caught you. I should have"')
-    time.sleep(0.1)
+    time.sleep(1)
+    print('"I should have caught you. I should have..."')
+    time.sleep(0.5)
 
     print("He holds you tightly, catching your tears.")
     print("You feel a warmth that you haven't felt in a long time.")
@@ -452,9 +462,9 @@ while True:
 
     print('"I\'m sorry."')
     time.sleep(1.5)
-    print('"See you."')
+    print("The world started to fade.")
     time.sleep(1.5)
-    print('"I Lov"')
+    print('"...I Lov"')
     time.sleep(0.2)
     print("The dream evaporates before your eyes.")
     time.sleep(1.5)
@@ -485,16 +495,17 @@ while True:
     time.sleep(2)
 
     print("But it's okay.")
-    time.sleep(1.5)
+    time.sleep(3)
     print("You believe that living your life is the only way you can be proudly see him again.")
     time.sleep(2)
 
     print("[True Ending: See you again]")
-    time.sleep(0.5)
+    time.sleep(3)
     print("[Step 13: Dawn]")
     time.sleep(3)
     print("\nThank you for playing.")
-    time.sleep(1)
+    time.sleep(2)
     print("If you enjoyed this story, here's the adapted short film directed by me: https://youtu.be/Sh820Sh9ffQ?si=6FQyPpZEB1UWHIoN")
     print("I hope you enjoyed them as much as I did :D")
+    print("See ya")
     break
