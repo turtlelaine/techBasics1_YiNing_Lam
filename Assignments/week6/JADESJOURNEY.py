@@ -15,7 +15,6 @@ current_room = None
 inventory.append({"name": "map", "type": "key", "description": "A worn map showing the way."})
 ending_conditions = set()
 
-
 def show_inventory():
     if not inventory:
         print("\nYour bag is empty.")
@@ -25,7 +24,6 @@ def show_inventory():
             uses_info = f" (uses: {item['uses']})" if item.get('uses') else ""
             print(f"{i}. {item['name']} - {item['type']}{uses_info}")
         print(f"Space: {len(inventory)}/{INVENTORY_LIMIT}")
-
 
 def show_room_items(room_items):
     if not room_items:
