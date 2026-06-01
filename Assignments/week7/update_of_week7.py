@@ -12,6 +12,8 @@ import time
 import csv
 import os
 
+from datetime import datetime
+
 INVENTORY_LIMIT = 5
 inventory = []
 current_room = None
@@ -22,12 +24,14 @@ DEBUG = True
 
 def save_record(name, score, ending):
     file_exists = os.path.exists(RECORD)
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    
     with open(RECORD, 'a', newline='') as f:
         writer = csv.writer(f)
         if not file_exists:
-            writer.writerow(["Name", "Score", "Ending"])
-        writer.writerow([name, score, ending])
-
+            writer.writerow(["Name", "Timestamp", "Score", "Ending"])
+        writer.writerow([name, timestamp, score, ending])
+        
 def load_records():
     try:
         with open(RECORD, 'r') as f:
@@ -35,8 +39,8 @@ def load_records():
             rows = list(reader)
             if len(rows) <= 1:
                 return []
-            return [{"name": row[0], "score": int(row[1]), "ending": row[2]}
-                    for row in rows[1:] if len(row) >= 3]
+            return [{"name": row[0], "timestamp": row[1], "score": int(row[2]), "ending": row[3]}
+                    for row in rows[1:] if len(row) >= 4]
     except FileNotFoundError:
         return []
     except ValueError:
@@ -51,7 +55,7 @@ def show_leaderboard():
     records.sort(key=lambda x: x["score"], reverse=True)
     print("\n--- LEADERBOARD ---")
     for i, r in enumerate(records[:5], 1):
-        print(f"{i}. {r['name']} - {r['score']}/5 endings ({r['ending']})")
+        print(f"{i}. {r['name']} - {r['score']}/5 endings ({r['ending']}) - {r['timestamp']}")
 
 
 def ending_count():
