@@ -1,6 +1,7 @@
 #original website: https://github.com/kitao/pyxel/tree/main
-"""I use it as a code study because I'd like to make a pixel game for the final project, and it's a program for making
-   pixel games. So I thought it should be useful to be one of the study and besides, it got high star rate :] seems pro
+"""
+I use it as a code study because I'd like to make a pixel game for the final project, and it's a program for making
+pixel games. So I thought it should be useful to be one of the study and besides, it got high star rate :] seems pro
 """
 import base64
 import importlib.util
