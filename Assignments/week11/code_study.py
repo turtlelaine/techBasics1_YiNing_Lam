@@ -173,8 +173,8 @@ def _create_app_dir():
     app_dir = play_dir / f"{os.getpid()}_{uuid.uuid4()}"
     if app_dir.exists():
         shutil.rmtree(app_dir)
-    app_dir.mkdir()                            # Create a new application directory
-    return str(app_dir)                        # Return the directory path
+    app_dir.mkdir() # Create a new application directory
+    return str(app_dir) # Return the directory path
 
 def _create_watch_state_file():
     watch_dir = Path(tempfile.gettempdir()) / pyxel.BASE_DIR / "watch"
